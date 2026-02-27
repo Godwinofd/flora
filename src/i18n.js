@@ -286,9 +286,10 @@ i18n
     .init({
         resources,
         fallbackLng: 'es',
+        lng: 'es', // Explicitly set initial language
         detection: {
-            order: ['localStorage', 'cookie'],
-            caches: ['localStorage']
+            order: ['localStorage', 'cookie', 'navigator'],
+            caches: ['localStorage', 'cookie']
         },
         interpolation: {
             escapeValue: false
