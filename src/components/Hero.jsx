@@ -38,11 +38,6 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-
-            <div className="hero-scroll">
-                <span>{t('hero.scroll')}</span>
-                <div className="hero-scroll-line"></div>
-            </div>
         </section>
     )
 }
