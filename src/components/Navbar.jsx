@@ -71,6 +71,20 @@ export default function Navbar() {
             {link.label}
           </a>
         ))}
+        <select
+          className="language-selector mobile-language-selector"
+          value={i18n.language?.substring(0, 2) || 'es'}
+          onChange={(e) => {
+            i18n.changeLanguage(e.target.value);
+            setMenuOpen(false);
+          }}
+        >
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+        </select>
       </div>
     </>
   )

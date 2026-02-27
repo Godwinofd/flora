@@ -471,6 +471,20 @@ h4 {
   color: var(--color-gold);
 }
 
+.mobile-language-selector {
+  margin-top: 20px;
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.mobile-language-selector option {
+  color: var(--color-charcoal);
+}
+
 /* ============================================
    HERO
    ============================================ */
